@@ -1,282 +1,280 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  font-size: 16px;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+.wrapper {
+  width: 100%;
+  float: left;
+}
+.wrapper aside {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(102, 85, 102, 0.25), rgba(143, 121, 143, 0.25) 80%, transparent 80%);
+  background-size: 8.47458%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+  background: none;
+}
+.wrapper aside:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+header {
+  background-color: rgba(34, 34, 34, 0.4);
+  position: fixed;
+  width: 100%;
+}
+header aside {
+  display: flex;
+}
+header aside .logo {
+  flex: 1 1 0;
+}
+header aside .logo img {
+  width: 32px;
+  margin-top: 16px;
+  text-align: left;
+}
+header aside nav {
+  flex: 8;
+}
+header aside .side-nav {
+  flex: 1;
+}
+header aside .side-nav img {
+  float: right;
+  margin-top: 18px;
+  width: 32px;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
+.container1 {
+  background-image: url("../img/section1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  min-height: 760px;
+  color: #fff;
+}
+.container1 h1 {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  font-size: 63px;
+  font-weight: lighter;
+  line-height: 65px;
+  margin-top: 19%;
+}
+.container1 p {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  font-size: 16px;
+  line-height: 25px;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+/* Defaut link style */
+#access a, #access #menu a, #menu li a {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  font-weight: bold;
+  padding: 17px 15px;
+  text-decoration: none;
+  transition: transform 500ms linear 0s, box-shadow 500ms ease-in 0s, background-color 250ms ease-in 0s;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
+#access a:hover, #access #menu a:hover, #access a.skip-link.focus, #access #menu a.skip-link.focus, #menu li a:hover {
+  color: #fff;
 }
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+#access a.skip-link, #access #menu a.skip-link {
+  position: relative;
+  z-index: 2;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
+#access a.skip-link span, #access #menu a.skip-link span {
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  -webkit-box-shadow: inset 0 0 0.5em rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 0.5em rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0.5em rgba(0, 0, 0, 0.2);
+  padding: 0 0.3em;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
+#access #menu li.active a a, #access #menu li.active a a:hover, #access #menu li.active:nth-child(odd) a, #access #menu li.active:nth-child(odd) a:hover {
+  color: #fff;
+  cursor: default;
+}
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
+#menu {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  list-style-image: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: max-height 500ms linear;
+  -moz-transition: max-height 500ms linear;
+  -ms-transition: max-height 500ms linear;
+  -o-transition: max-height 500ms linear;
+  transition: max-height 500ms linear;
+}
+
+#menu li a {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -moz-binding: url("xml/ellipsis.xml#ellipsis");
+}
+
+@media only screen and (max-width: 768px) {
+  #menu {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: margin 500ms linear;
+    -moz-transition: margin 500ms linear;
+    -ms-transition: margin 500ms linear;
+    -o-transition: margin 500ms linear;
+    transition: margin 500ms linear;
+    margin-top: -1.2em;
     overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
+  }
 
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+  #menu li {
+    max-height: 0;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+  }
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
+  #menu li a {
+    -webkit-transform-origin: top 50%;
+    -moz-transform-origin: top 50%;
+    -ms-transform-origin: top 50%;
+    -o-transform-origin: top 50%;
+    transform-origin: top 50%;
+    -webkit-transform: rotateX(-90deg) scale(0.97);
+    -moz-transform: rotateX(-90deg) scale(0.97);
+    -ms-transform: rotateX(-90deg) scale(0.97);
+    -o-transform: rotateX(-90deg) scale(0.97);
+    transform: rotateX(-90deg) scale(0.97);
+    position: relative;
+    overflow: hidden;
+  }
+
+  #menu li:nth-child(odd) a {
+    -webkit-box-shadow: inset 0 0 4em rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 0 4em rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 4em rgba(0, 0, 0, 0.5);
+    -webkit-transform: rotateX(90deg) scale(0.97);
+    -moz-transform: rotateX(90deg) scale(0.97);
+    -ms-transform: rotateX(90deg) scale(0.97);
+    -o-transform: rotateX(90deg) scale(0.97);
+    transform: rotateX(90deg) scale(0.97);
+  }
+
+  #menu li.active a:before, #menu li a:hover:before {
+    opacity: 1;
+  }
+
+  #menu li a:hover:before {
+    color: #689384;
+  }
+
+  #menu li.active a:before, #menu li.active a:hover:before {
+    color: #fff;
+  }
+
+  #menu:target, #menu.target {
+    margin-top: 0;
+  }
+
+  #menu:target li, #menu.target li {
+    max-height: 2.5em;
     height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+  }
+
+  #menu:target li a, #menu.target li a {
+    -webkit-box-shadow: inset 0 0 0 transparent;
+    -moz-box-shadow: inset 0 0 0 transparent;
+    box-shadow: inset 0 0 0 transparent;
+    -webkit-transform: rotateX(0) scale(1);
+    -moz-transform: rotateX(0) scale(1);
+    -ms-transform: rotateX(0) scale(1);
+    -o-transform: rotateX(0) scale(1);
+    transform: rotateX(0) scale(1);
+  }
 }
+@media only screen and (min-width: 769px) {
+  [class^="icon-"]:before,
+  [class*=" icon-"]:before {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
+  #access a.skip-link {
+    display: none;
+  }
 
-.invisible {
-    visibility: hidden;
-}
+  #menu {
+    width: 100%;
+    text-align: center;
+  }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+  #menu li {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    white-space: nowrap;
+  }
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
+  #menu li {
+    *display: inline;
+  }
 
-.clearfix:after {
-    clear: both;
-}
+  #menu li a:before {
+    -webkit-transition: -webkit-transform 500ms ease-in;
+    -moz-transition: -moz-transform 500ms ease-in;
+    -ms-transition: -ms-transform 500ms ease-in;
+    -o-transition: -o-transform 500ms ease-in;
+    transition: transform 500ms ease-in;
+  }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  #menu li a:hover:before {
+    -webkit-transform: translateY(1em) scale(3) rotate(15deg);
+    -moz-transform: translateY(1em) scale(3) rotate(15deg);
+    -ms-transform: translateY(1em) scale(3) rotate(15deg);
+    -o-transform: translateY(1em) scale(3) rotate(15deg);
+    transform: translateY(1em) scale(3) rotate(15deg);
+  }
 }
