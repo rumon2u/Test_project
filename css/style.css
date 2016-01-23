@@ -1,11 +1,17 @@
+@font-face {
+  font-family: Gotham-Light;
+  src: url(fonts/GothamBook.ttf);
+}
 html {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -41,7 +47,7 @@ header aside .logo {
   flex: 1 1 0;
 }
 header aside .logo img {
-  width: 32px;
+  width: 29px;
   margin-top: 16px;
   text-align: left;
 }
@@ -54,41 +60,198 @@ header aside .side-nav {
 header aside .side-nav img {
   float: right;
   margin-top: 18px;
-  width: 32px;
+  width: 22px;
 }
 
 .container1 {
   background-image: url("../img/section1.jpg");
-  background-position: center center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: 100% auto;
   min-height: 760px;
   color: #fff;
 }
 .container1 h1 {
-  width: 49.15254%;
+  width: 32.20339%;
   float: left;
   margin-right: 1.69492%;
   font-size: 63px;
   font-weight: lighter;
   line-height: 65px;
-  margin-top: 19%;
+  margin-top: 17%;
+  margin-bottom: 25px;
 }
 .container1 p {
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%;
+  line-height: 25px;
+  clear: both;
+  letter-spacing: 1px;
+}
+
+.container2 h2 {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 29px;
+  font-weight: bold;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  color: #000;
+}
+.container2 p {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+.container3 aside {
+  display: flex;
+  margin-top: 100px;
+}
+.container3 aside .app-box {
+  flex: 1;
+  padding: 10px;
+}
+.container3 aside .app-box .app-img {
+  float: left;
+  margin-bottom: 60px;
+  width: 100%;
+  margin-left: -16%;
+}
+.container3 aside .app-box .app-img img {
+  width: 230px;
+}
+.container3 aside .app-box .app-text img {
+  margin-right: 10px;
+  width: 50px;
+  float: left;
+}
+.container3 aside .app-box .app-text h2 {
+  font-size: 22px;
+  margin-top: 60px;
+  opacity: .7;
+  margin-top: 15px;
+  float: left;
+}
+.container3 aside .app-box .app-text p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  opacity: 0.7;
+  text-align: left;
+  float: left;
+  margin-top: 10px;
+}
+
+.container4 {
+  background: #131313;
+  margin-top: 100px;
+}
+.container4 .note-content {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 25.42373%;
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+}
+.container4 .note-content h2 {
+  font-size: 29px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.container4 .note-content p {
+  font-size: 18px;
+}
+.container4 .note-content .note-img {
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+}
+.container4 .note-content .note-img a {
+  color: #fff;
+}
+.container4 .note-content .note-img .note {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-top: 40%;
+}
+.container4 .note-content .note-img .note img {
+  float: left;
+  width: 50px;
+}
+.container4 .note-content .note-img .note h2 {
+  float: left;
+  font-size: 22px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.container4 .note-content .note-img .note p {
+  float: left;
+  font-size: 10px;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+.container4 .note-content .note-img .note-img-big {
+  width: 74.57627%;
+  float: right;
+  margin-right: 0;
+}
+.container4 .note-content .note-img .note-img-big img {
+  float: left;
+  margin-bottom: -7%;
+  margin-left: -3%;
+  max-width: 73%;
+}
+
+footer {
+  padding: 12px;
+}
+footer button {
+  background-color: transparent;
+  border: 2px solid #666;
+  border-radius: 0;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 35px;
+  padding: 0 20px;
+  text-rendering: optimizelegibility;
+  text-transform: uppercase;
+  transition-duration: 0.1s;
+  transition-property: all;
+  transition-timing-function: ease-out;
+  float: right;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+footer button a {
+  text-decoration: none;
+  color: #666;
+}
+footer button:hover {
+  border: 2px solid #222;
+  background: #222;
+}
+footer button:hover a {
+  color: #fff;
 }
 
 /* Defaut link style */
 #access a, #access #menu a, #menu li a {
   color: rgba(255, 255, 255, 0.6);
   display: block;
+  font-size: 10px;
   font-weight: bold;
-  padding: 17px 15px;
+  letter-spacing: 2px;
+  padding: 15px;
   text-decoration: none;
+  text-transform: uppercase;
   transition: transform 500ms linear 0s, box-shadow 500ms ease-in 0s, background-color 250ms ease-in 0s;
 }
 
@@ -104,7 +267,7 @@ header aside .side-nav img {
 #access a.skip-link span, #access #menu a.skip-link span {
   position: absolute;
   right: 0.5em;
-  top: 0.5em;
+  top: 1.5em;
   -webkit-box-shadow: inset 0 0 0.5em rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 0 0.5em rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 0 0.5em rgba(0, 0, 0, 0.2);
@@ -276,5 +439,448 @@ header aside .side-nav img {
     -ms-transform: translateY(1em) scale(3) rotate(15deg);
     -o-transform: translateY(1em) scale(3) rotate(15deg);
     transform: translateY(1em) scale(3) rotate(15deg);
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1169px) {
+  .wrapper aside {
+    max-width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(102, 85, 102, 0.25), rgba(143, 121, 143, 0.25) 80%, transparent 80%);
+    background-size: 8.47458%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+    background: none;
+  }
+  .wrapper aside:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  .container1 {
+    min-height: 770px;
+  }
+  .container1 h1 {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    font-size: 40px;
+    font-weight: lighter;
+    line-height: 45px;
+    margin-top: 20%;
+    margin-bottom: 25px;
+  }
+  .container1 p {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  #access a, #access #menu a, #menu li a {
+    padding: 15px 7px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .wrapper aside {
+    max-width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(102, 85, 102, 0.25), rgba(143, 121, 143, 0.25) 80%, transparent 80%);
+    background-size: 8.47458%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+    background: none;
+  }
+  .wrapper aside:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  .container1 {
+    min-height: 560px;
+  }
+  .container1 h1 {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    font-size: 35px;
+    font-weight: lighter;
+    line-height: 40px;
+    margin-top: 20%;
+    margin-bottom: 25px;
+  }
+  .container1 p {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    line-height: 22px;
+    clear: both;
+    letter-spacing: 1px;
+  }
+
+  .container2 h2 {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    font-size: 25px;
+  }
+  .container2 p {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  .container3 aside .app-box .app-img {
+    margin-bottom: 30px;
+  }
+  .container3 aside .app-box .app-img img {
+    width: 160px;
+  }
+  .container3 aside .app-box .app-text h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .container3 aside .app-box .app-text p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .container4 {
+    margin-top: 60px;
+  }
+  .container4 .note-content {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 16.94915%;
+    margin-top: 50px;
+  }
+  .container4 .note-content h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .container4 .note-content p {
+    font-size: 16px;
+  }
+  .container4 .note-content .note-img .note {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-top: 40%;
+  }
+  .container4 .note-content .note-img .note img {
+    float: left;
+    width: 45px;
+  }
+  .container4 .note-content .note-img .note h2 {
+    float: left;
+    font-size: 20px;
+  }
+  .container4 .note-content .note-img .note p {
+    float: left;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: -5px;
+  }
+  .container4 .note-content .note-img .note-img-big {
+    width: 74.57627%;
+    float: right;
+    margin-right: 0;
+  }
+  .container4 .note-content .note-img .note-img-big img {
+    float: left;
+    margin-bottom: -7%;
+    margin-left: -3%;
+    max-width: 73%;
+  }
+
+  #access a, #access #menu a, #menu li a {
+    font-size: 8px;
+    padding: 15px 0;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .wrapper aside {
+    max-width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(102, 85, 102, 0.25), rgba(143, 121, 143, 0.25) 80%, transparent 80%);
+    background-size: 8.47458%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+    background: none;
+  }
+  .wrapper aside:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  .container1 {
+    min-height: 370px;
+  }
+  .container1 h1 {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    font-size: 25px;
+    font-weight: lighter;
+    line-height: 32px;
+    margin-top: 15%;
+    margin-bottom: 20px;
+  }
+  .container1 p {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    line-height: 18px;
+    clear: both;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+  .container2 {
+    text-align: center;
+  }
+  .container2 h2 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 22px;
+  }
+  .container2 p {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container3 aside {
+    display: block;
+    text-align: center;
+  }
+  .container3 aside .app-box {
+    width: 100%;
+    margin-bottom: 15px;
+    float: left;
+  }
+  .container3 aside .app-box .app-img {
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+  .container3 aside .app-box .app-text h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .container3 aside .app-box .app-text p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .container4 {
+    margin-top: 60px;
+  }
+  .container4 .note-content {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 8.47458%;
+    margin-top: 50px;
+  }
+  .container4 .note-content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .container4 .note-content p {
+    font-size: 16px;
+  }
+  .container4 .note-content .note-img .note {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-top: 40%;
+  }
+  .container4 .note-content .note-img .note img {
+    float: left;
+    width: 30px;
+  }
+  .container4 .note-content .note-img .note h2 {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 0;
+  }
+  .container4 .note-content .note-img .note p {
+    float: left;
+    font-size: 9px;
+    margin-left: 5px;
+    margin-top: -5px;
+  }
+  .container4 .note-content .note-img .note-img-big {
+    width: 74.57627%;
+    float: right;
+    margin-right: 0;
+  }
+  .container4 .note-content .note-img .note-img-big img {
+    float: left;
+    margin-bottom: -7%;
+    margin-left: -3%;
+    max-width: 73%;
+  }
+
+  footer button {
+    font-size: 10px;
+    line-height: 35px;
+    padding: 0 12px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .wrapper aside {
+    max-width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(102, 85, 102, 0.25), rgba(143, 121, 143, 0.25) 80%, transparent 80%);
+    background-size: 8.47458%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+    background: none;
+  }
+  .wrapper aside:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  .container1 {
+    min-height: 270px;
+    text-align: center;
+  }
+  .container1 h1 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 19px;
+    font-weight: lighter;
+    line-height: 24px;
+    margin-top: 15%;
+    margin-bottom: 10px;
+  }
+  .container1 p {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 16px;
+    clear: both;
+    letter-spacing: 1px;
+    font-size: 13px;
+  }
+
+  .container2 {
+    text-align: center;
+  }
+  .container2 h2 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 18px;
+  }
+  .container2 p {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 13px;
+  }
+
+  .container3 aside {
+    display: block;
+    text-align: center;
+  }
+  .container3 aside .app-box {
+    width: 100%;
+    margin-bottom: 15px;
+    float: left;
+  }
+  .container3 aside .app-box .app-img {
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+  .container3 aside .app-box .app-text h2 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .container3 aside .app-box .app-text p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .container4 {
+    margin-top: 60px;
+  }
+  .container4 .note-content {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: 0%;
+    margin-top: 50px;
+  }
+  .container4 .note-content h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .container4 .note-content p {
+    font-size: 14px;
+  }
+  .container4 .note-content .note-img .note {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-top: 40%;
+  }
+  .container4 .note-content .note-img .note img {
+    float: left;
+    width: 40px;
+  }
+  .container4 .note-content .note-img .note h2 {
+    font-size: 15px;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    text-align: left;
+  }
+  .container4 .note-content .note-img .note p {
+    float: left;
+    font-size: 9px;
+    margin-left: 0;
+    margin-top: -5px;
+  }
+  .container4 .note-content .note-img .note-img-big {
+    width: 74.57627%;
+    float: right;
+    margin-right: 0;
+  }
+  .container4 .note-content .note-img .note-img-big img {
+    float: left;
+    margin-bottom: -7%;
+    margin-left: -3%;
+    max-width: 73%;
+  }
+
+  footer button {
+    font-size: 10px;
+    line-height: 33px;
+    margin-right: 29%;
+    margin-top: 8px;
+    padding: 0 15px;
   }
 }

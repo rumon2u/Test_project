@@ -20,7 +20,7 @@ header{
     .logo{
       flex: 1 1 0;
       img{
-        width:32px;
+        width:29px;
         margin-top: 16px;
         text-align: left;
       }
@@ -33,32 +33,182 @@ header{
       img{
         float: right;
         margin-top: 18px;
-        width: 32px;
+        width: 22px;
       }
     }
   }
 }
 .container1{
   background-image: url("../img/section1.jpg");
-  background-position: center center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: 100% auto;
   min-height: 760px;
   color: #fff;
   h1{
-    @include span(6);
-    font-size: 63px;
+    @include span(4);
+   font-size: 63px;
     font-weight: lighter;
     line-height: 65px;
-    margin-top: 19%;
-  }
-  p{
-    @include span(6);
-    font-size: 16px;
-    line-height: 25px;
-  }
+    margin-top: 17%;
+    margin-bottom: 25px;
 
   }
+  p{
+    @include span(5);
+    line-height: 25px;
+    clear: both;
+    letter-spacing: 1px;
+    }
+  }
+  .container2{
+    h2{
+      @include span(6);
+      font-size: 29px;
+      font-weight: bold;
+       margin-top: 5%;
+       margin-bottom: 1%;
+       color: #000;
+    }
+    p{
+      @include span(6);
+    }
+  }
+  .container3 aside{
+        display: flex;
+        margin-top: 100px;
+        .app-box{
+          flex: 1;
+          padding: 10px;
+          .app-img {
+              float: left;
+              margin-bottom: 60px;
+              width: 100%;
+              margin-left: -16%;
+              img{
+              width: 230px;
+              }
+            }
+            .app-text{
+              img{
+                margin-right: 10px;
+                width: 50px;
+                float: left;
+              }
+              h2{
+                font-size: 22px;
+                margin-top: 60px;
+                opacity: .7;
+                margin-top: 15px;
+                float: left;
+              }
+              p{
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 24px;
+                opacity: 0.7;
+                text-align: left;
+                float: left;
+                margin-top: 10px;
+              }
+          }
+        }
+  }
+  .container4{
+    background: #131313;
+    margin-top: 100px;
+    .note-content{
+      @include span(6);
+      @include push(3);
+      text-align: center;
+      margin-top: 50px;
+      color: #fff;
+      h2{
+        font-size: 29px;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      p{
+        font-size: 18px;
+      }
+      .note-img{
+        width: 100%;
+        float: left;
+        margin-top: 30px;
+        a{
+          color: #fff;
+        }
+        .note{
+          @include span(3);
+          margin-top: 40%;
+          img{
+            float: left;
+            width: 50px;
+          }
+          h2{
+            float: left;
+            font-size: 22px;
+            margin-bottom: 0;
+            margin-left: 10px;
+            margin-top: 5px;
+          }
+          p{
+            float: left;
+            font-size: 10px;
+            margin-left: 10px;
+            margin-top: -5px;
+          }
+        }
+        .note-img-big{
+          @include span(9 at 4);
+          img{
+            float: left;
+            margin-bottom: -7%;
+            margin-left: -3%;
+            max-width: 73%;
+          }
+        }
+      }
+    }
+  }
+  footer{
+    padding: 12px;
+    button{
+      background-color: transparent;
+      border: 2px solid #666;
+      border-radius: 0;
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 35px;
+      padding: 0 20px;
+      text-rendering: optimizelegibility;
+      text-transform: uppercase;
+      transition-duration: 0.1s;
+      transition-property: all;
+      transition-timing-function: ease-out;
+      float: right;
+      letter-spacing: 1px;
+      font-weight: bold;
+      a{
+        text-decoration: none;
+        color: #666;
+
+        }
+      }
+      button:hover{
+        border: 2px solid #222;
+        background: #222;
+        a{
+          color: #fff;
+        }
+      }
+  }
+
+
+
+
+
 
 
 
@@ -66,9 +216,12 @@ header{
 #access a, #access #menu a, #menu li a {
   color: rgba(255, 255, 255, 0.6);
   display: block;
+  font-size: 10px;
   font-weight: bold;
-  padding: 17px 15px;
+  letter-spacing: 2px;
+  padding: 15px;
   text-decoration: none;
+  text-transform: uppercase;
   transition: transform 500ms linear 0s, box-shadow 500ms ease-in 0s, background-color 250ms ease-in 0s;
 }
 #access a:hover, #access #menu a:hover, #access a.skip-link.focus, #access #menu a.skip-link.focus, #menu li a:hover {
@@ -82,7 +235,7 @@ header{
 #access a.skip-link span, #access #menu a.skip-link span {
   position: absolute;
   right: 0.5em;
-  top: 0.5em;
+  top: 1.5em;
   -webkit-box-shadow: inset 0 0 0.5em rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 0 0.5em rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 0 0.5em rgba(0, 0, 0, 0.2);
@@ -240,3 +393,377 @@ header{
     transform: translateY(1em) scale(3) rotate(15deg);
   }
 }
+
+//Responsice CSS
+
+  @media only screen and (min-width: 1000px) and (max-width: 1169px){
+    .wrapper{
+      aside{
+        @include container(96%);
+        background: none;
+      }
+    }
+    .container1{
+      min-height: 770px;
+      h1{
+        @include span(4);
+        font-size: 40px;
+        font-weight: lighter;
+        line-height: 45px;
+        margin-top: 20%;
+        margin-bottom: 25px;
+
+      }
+      p{
+        @include span(6);
+        }
+      }
+
+      #access a, #access #menu a, #menu li a {
+        padding: 15px 7px;
+      }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 999px){
+    .wrapper{
+      aside{
+        @include container(96%);
+        background: none;
+      }
+    }
+    .container1{
+      min-height: 560px;
+      h1{
+        @include span(4);
+        font-size: 35px;
+        font-weight: lighter;
+        line-height: 40px;
+        margin-top: 20%;
+        margin-bottom: 25px;
+
+      }
+      p{
+        @include span(6);
+        line-height: 22px;
+        clear: both;
+        letter-spacing: 1px;
+        }
+      }
+      .container2{
+        h2{
+          @include span(8);
+          font-size: 25px;
+        }
+        p{
+          @include span(8);
+        }
+      }
+      .container3 aside{
+            .app-box{
+              .app-img {
+                  margin-bottom: 30px;
+                  img{
+                  width: 160px;
+                  }
+                }
+                .app-text{
+
+                  h2{
+                    font-size: 20px;
+                    margin-top: 10px;
+                  }
+                  p{
+                    font-size: 12px;
+                    line-height: 18px;
+                  }
+              }
+            }
+      }
+      .container4{
+        margin-top: 60px;
+        .note-content{
+          @include span(8);
+          @include push(2);
+          margin-top: 50px;
+          h2{
+            font-size: 23px;
+            margin-bottom: 15px;
+          }
+          p{
+            font-size: 16px;
+          }
+          .note-img{
+            .note{
+              @include span(3);
+              margin-top: 40%;
+              img{
+                float: left;
+                width: 45px;
+              }
+              h2{
+                float: left;
+                font-size: 20px;
+              }
+              p{
+                float: left;
+                font-size: 10px;
+                margin-left: 10px;
+                margin-top: -5px;
+              }
+            }
+            .note-img-big{
+              @include span(9 at 4);
+              img{
+                float: left;
+                margin-bottom: -7%;
+                margin-left: -3%;
+                max-width: 73%;
+              }
+            }
+          }
+        }
+      }
+
+      #access a, #access #menu a, #menu li a {
+        font-size: 8px;
+        padding: 15px 0;
+      }
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px){
+    .wrapper{
+      aside{
+        @include container(96%);
+        background: none;
+      }
+    }
+    .container1{
+      min-height: 370px;
+      h1{
+        @include span(6);
+        font-size: 25px;
+        font-weight: lighter;
+        line-height: 32px;
+        margin-top: 15%;
+        margin-bottom: 20px;
+
+      }
+      p{
+        @include span(8);
+        line-height: 18px;
+        clear: both;
+        letter-spacing: 1px;
+        font-size: 14px;
+        }
+      }
+      .container2{
+        text-align: center;
+        h2{
+          @include span(12);
+          font-size: 22px;
+        }
+        p{
+          @include span(12);
+        }
+      }
+      .container3 aside{
+        display: block;
+        text-align: center;
+        .app-box{
+            width: 100%;
+            margin-bottom: 15px;
+            float: left;
+              .app-img {
+                  margin-bottom: 30px;
+                  margin-left:0;
+                  img{
+                  }
+                }
+                .app-text{
+
+                  h2{
+                    font-size: 20px;
+                    margin-top: 10px;
+                  }
+                  p{
+                    font-size: 12px;
+                    line-height: 18px;
+                  }
+              }
+            }
+      }
+      .container4{
+        margin-top: 60px;
+        .note-content{
+          @include span(10);
+          @include push(1);
+          margin-top: 50px;
+          h2{
+            font-size: 22px;
+            margin-bottom: 15px;
+          }
+          p{
+            font-size: 16px;
+          }
+          .note-img{
+            .note{
+              @include span(3);
+              margin-top: 40%;
+              img{
+                float: left;
+                width: 30px;
+              }
+              h2{
+                font-size: 15px;
+                margin-left: 5px;
+                margin-top: 0;
+              }
+              p{
+                float: left;
+                font-size: 9px;
+                margin-left: 5px;
+                margin-top: -5px;
+              }
+            }
+            .note-img-big{
+              @include span(9 at 4);
+              img{
+                float: left;
+                margin-bottom: -7%;
+                margin-left: -3%;
+                max-width: 73%;
+              }
+            }
+          }
+        }
+      }
+      footer{
+        button{
+          font-size: 10px;
+          line-height: 35px;
+          padding: 0 12px;
+          }
+        }
+  }
+
+@media only screen  and (max-width: 479px){
+    .wrapper{
+      aside{
+        @include container(96%);
+        background: none;
+      }
+    }
+    .container1{
+      min-height: 270px;
+      text-align: center;
+      h1{
+        @include span(12);
+        font-size: 19px;
+        font-weight: lighter;
+        line-height: 24px;
+        margin-top: 15%;
+        margin-bottom: 10px;
+
+      }
+      p{
+        @include span(12);
+        line-height: 16px;
+        clear: both;
+        letter-spacing: 1px;
+        font-size: 13px;
+        }
+      }
+      .container2{
+        text-align: center;
+        h2{
+          @include span(12);
+          font-size: 18px;
+        }
+        p{
+          @include span(12);
+          font-size: 13px;
+        }
+      }
+      .container3 aside{
+        display: block;
+        text-align: center;
+        .app-box{
+            width: 100%;
+            margin-bottom: 15px;
+            float: left;
+              .app-img {
+                  margin-bottom: 30px;
+                  margin-left:0;
+                  img{
+                  }
+                }
+                .app-text{
+
+                  h2{
+                    font-size: 18px;
+                    margin-top: 15px;
+                  }
+                  p{
+                    font-size: 12px;
+                    line-height: 16px;
+                  }
+              }
+            }
+      }
+      .container4{
+        margin-top: 60px;
+        .note-content{
+          @include span(12);
+          @include push(0);
+          margin-top: 50px;
+          h2{
+            font-size: 18px;
+            margin-bottom: 15px;
+          }
+          p{
+            font-size: 14px;
+          }
+          .note-img{
+            .note{
+              @include span(3);
+              margin-top: 40%;
+              img{
+                float: left;
+                width: 40px;
+              }
+              h2{
+                font-size: 15px;
+                margin-left: 0;
+                margin-top: 0;
+                width: 100%;
+                text-align: left;
+              }
+              p{
+                float: left;
+                font-size: 9px;
+                margin-left: 0;
+                margin-top: -5px;
+              }
+            }
+            .note-img-big{
+              @include span(9 at 4);
+              img{
+                float: left;
+                margin-bottom: -7%;
+                margin-left: -3%;
+                max-width: 73%;
+              }
+            }
+          }
+        }
+      }
+      footer{
+        button{
+          font-size: 10px;
+          line-height: 33px;
+          margin-right: 29%;
+          margin-top: 8px;
+          padding: 0 15px;
+          }
+        }
+  }

@@ -17,12 +17,11 @@ html {
  */
 
  body {
-   color: #777;
-   font-family: "Gotham SSm A","Gotham SSm B",sans-serif;
-   font-size: 13px;
+   color: #a9a9a9;
+   font-family: 'Roboto', sans-serif;
    font-style: normal;
    font-weight: 300;
-   line-height: 21px;
+   line-height: 25px;
  }
 
 /* HTML5 display definitions
@@ -93,6 +92,7 @@ template {
 
 a {
   background-color: transparent;
+  color: #a9a9a9;
 }
 
 /**
@@ -187,9 +187,10 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 
-img {
-  border: 0;
-}
+ img {
+   border: 0 none;
+   max-width: 100%;
+ }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
